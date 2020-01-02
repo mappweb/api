@@ -27,7 +27,8 @@ class ApiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //Controllers
+        //$this->app->make('Mappweb\Api\Http\Controllers\Api\AuthController');
     }
 
 

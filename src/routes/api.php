@@ -11,12 +11,12 @@
 |
 */
 
-Route::namespace('Api')->prefix('v1')->group(function (\Illuminate\Routing\Router $router){
-    $router->post('login', 'v1\AuthController@login');
-    $router->post('register', 'v1\AuthController@register');
+Route::namespace('Mappweb\\Api\Http\\Controllers')->prefix('v1')->group(function (\Illuminate\Routing\Router $router){
+    $router->post('login', 'Api\AuthController@login');
+    $router->post('register', 'Api\AuthController@register');
 });
 
 
-Route::namespace('Api')->middleware('auth:api')->prefix('v1')->group(function (\Illuminate\Routing\Router $router){
-    $router->post('logout', 'v1\AuthController@logout');
+Route::namespace('Mappweb\\Api\Http\\Controllers')->middleware('auth:api')->prefix('v1')->group(function (\Illuminate\Routing\Router $router){
+    $router->post('logout', 'Api\AuthController@logout');
 });
