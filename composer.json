@@ -1,0 +1,31 @@
+{
+    "name": "mappweb/api",
+    "description": "Api utilities for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego",
+            "email": "diego.toscanof@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mappweb\\Api\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mappweb\\Api\\ApiServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
