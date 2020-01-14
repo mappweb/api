@@ -1,6 +1,6 @@
 <?php
 
-namespace Mappweb\Api\Http\Controllers\Api\v1;
+namespace Mappweb\Api\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\User;
