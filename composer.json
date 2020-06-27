@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "laravel/passport": "^9.2"
     },
     "autoload": {
         "psr-4": {
@@ -27,5 +28,19 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "github-protocols": [
+            "https,ssh"
+        ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    }
 }
